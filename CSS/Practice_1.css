@@ -1,0 +1,44 @@
+/* PART B (Pseudo Classes & Pseudo Elements)
+Q9. Set the text color of the checkbox label to dark green when the checkbox is ticked.
+Q10. Order these rules according to their specificity, from least specific to most specific:
+h1
+#mainContent
+.main
+div.main */
+p:nth-of-type(odd){
+    color: yellow;
+}
+
+h1::first-letter{
+    color: red;
+}
+
+#yes:checked+label{
+    color: darkgreen;
+}
+
+#mainTopic{
+    color: blue;
+}
+
+*{
+    text-align: center;
+}
+
+h1,h3,h5{
+    font-family: Georgia;
+}
+.para{
+    background-color: cornflowerblue;
+    color: white;
+}
+
+div button{
+    background-color: purple;
+    color: azure;
+}
+
+button:hover{
+    background-color: yellow;
+    color: blue;
+}

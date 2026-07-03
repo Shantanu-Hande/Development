@@ -33,3 +33,12 @@ p + h3{
     background-color: blue;
     color: white;
 }
+
+h3:hover{
+    text-decoration: none;
+    color: black;
+}
+
+p::selection{
+    background-color: lightcoral;
+}
