@@ -1,0 +1,72 @@
+#outer{
+    height: 200px;
+    width: 70px;
+    border: 2px solid black;
+    margin: 10px;
+    background-color: black;
+}
+
+.inner{
+    height : 50px;
+    width: 50px;
+    border: 2px solid black;
+    margin : 10px;
+    border-radius: 50%;
+}
+
+#red{
+    background-color: red;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#green{
+    background-color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* div{
+    padding-top: 50px;
+    height: 100px;
+    background-color: lightblue;
+    border : 3px solid black;
+    border-top-right-radius : 30px;
+    border-bottom-left-radius : 30px;
+    margin : 25px
+}
+
+*{
+    text-align: center;
+}
+
+h1{
+    border: 5px ridge black;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+button{
+    border: 2px double black;
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+} */
