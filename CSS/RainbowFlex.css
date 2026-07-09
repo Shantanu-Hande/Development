@@ -1,0 +1,51 @@
+#container{
+    height : 500px;
+    width: 80%;
+    border: 2px solid black;
+    background-color: azure;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    /* align-items: center; */
+    
+}
+
+h1{
+    text-align: center;
+}
+
+#container div{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 2;
+    color: white;
+}
+
+
+#violet{
+    background-color: violet;
+}
+#indigo{
+    background-color: indigo;
+}
+#blue{
+    background-color: blue;
+}
+#green{
+    background-color: green;
+}
+#yellow{
+    background-color: yellow;
+    flex-grow: 1;
+}
+#orange{
+    background-color: orange;
+    align-self: flex-start;
+}
+#red{
+    background-color: red;
+}
