@@ -20,7 +20,6 @@ h1.innerHTML = "<u>DOM Practice</u>";
 document.querySelector("body").prepend(h1);
 
 //Q5
-//Createaptagonthepageandsetitstextto“ApnaCollegeDeltaPractice”,whereDeltais
 let p = document.createElement('p');
 p.innerHTML = "Apna College <b>Delta</b> Practice";
 document.querySelector("body").append(p);
