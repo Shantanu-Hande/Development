@@ -110,32 +110,73 @@
 // });
 
 
+// h1 = document.querySelector("h1");
+// function changeColor(color,delay){
+//     return new Promise((resolve,reject) => {
+//         setTimeout(()=>{
+//            h1.style.color = color;
+//            resolve("color changed");
+//         },delay);
+//     })
+// }
+
+// changeColor("red",1000)
+// .then(()=>{
+//     console.log("color changed to red");
+//     return changeColor("orange",1000);
+// })
+// .then(()=>{
+//     console.log("color changed to orange");
+//     return changeColor("blue",1000);
+// })
+// .then(()=>{
+//     console.log("color changed to blue");
+//     return changeColor("green",1000);
+// })
+// .then(()=>{
+//     console.log("color changed to green");
+// })
+
+//                                    Async Keyword
+
+// async function greet(){
+//     throw"404 page not found";
+//     return "hello";
+// }
+// greet()
+// .then((result)=>{
+//     console.log("Promise is resolved");
+//     console.log("the result = ",result);
+// })
+// .catch((err)=>{
+//     console.log("Promise was rejected with err : ",err);
+// })
+
+
+//                                   Await Keyword
+
+
 h1 = document.querySelector("h1");
-function changeColor(color,delay){
+function colorChange(color,delay){
     return new Promise((resolve,reject) => {
         setTimeout(()=>{
            h1.style.color = color;
-           resolve("color changed");
+           console.log(`color changed to ${color}`);
+           resolve(`color changed`);
         },delay);
     })
 }
+ 
 
-changeColor("red",1000)
-.then(()=>{
-    console.log("color changed to red");
-    return changeColor("orange",1000);
-})
-.then(()=>{
-    console.log("color changed to orange");
-    return changeColor("blue",1000);
-})
-.then(()=>{
-    console.log("color changed to blue");
-    return changeColor("green",1000);
-})
-.then(()=>{
-    console.log("color changed to green");
-})
+async function show(){
+    await colorChange("blue",1000);
+    await colorChange("red",1000);
+    await colorChange("orange",1000);
+    await colorChange("yellow",1000);
+    await colorChange("green",1000);
+
+    return "done";
+}
 
 
 
