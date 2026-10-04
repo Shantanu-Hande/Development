@@ -166,14 +166,14 @@ function colorChange(color,delay){
         },delay);
     })
 }
- 
-
+v
 async function show(){
     await colorChange("blue",1000);
     await colorChange("red",1000);
     await colorChange("orange",1000);
     await colorChange("yellow",1000);
     await colorChange("green",1000);
+    await colorChange("violet",1000);
 
     return "done";
 }
