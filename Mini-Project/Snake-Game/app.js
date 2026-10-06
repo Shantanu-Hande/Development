@@ -51,8 +51,10 @@ function render(){
 
     if(head.x == food.x && head.y == food.y){
         blocks[`(${food.x},${food.y})`].classList.remove("food");
-        food = { x: Math.floor(Math.random()*rows) , y: Math.floor(Math.random()*cols) } 
-        score();
+        food = { x: Math.floor(Math.random()*rows) , y: Math.floor(Math.random()*cols) }
+        blocks[`(${food.x},${food.y})`].classList.add("food");
+        snake.unshift(head)
+        // score();
     }
 
     snake.forEach(segment => {
@@ -67,20 +69,20 @@ function render(){
     })
 }
 
-function score(){
-    Score++;
-    let currScore = document.querySelector("#score")
-    currScore.innerText = Score; 
-    if(Score > highScore){
-        highScore = Score
-        let HighScore = document.querySelector("#high-score")
-        HighScore.innerText = highScore
-    }
-}
+// function score(){
+//     Score++;
+//     let currScore = document.querySelector("#score")
+//     currScore.innerText = Score; 
+//     if(Score > highScore){
+//         highScore = Score
+//         let HighScore = document.querySelector("#high-score")
+//         HighScore.innerText = highScore
+//     }
+// }
 
-internalId = setInterval(() => {
-    render()
-},200)
+// internalId = setInterval(() => {
+//     render()
+// },200)
 
 console.log("before listener");
 addEventListener("keydown",(event) => {
