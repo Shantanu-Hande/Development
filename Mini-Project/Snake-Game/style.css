@@ -54,6 +54,18 @@ section{
     width: 100%;
 }
 
+.btn {
+    padding: var(--space-sm) var(--space-md);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
 section{
     padding: var(--space-2xl);
     display: flex;
@@ -85,8 +97,7 @@ section .infos{
 
 .block {
     border: 1px solid var(--border-primary-color);
-    /* height: 30px;
-    width: 30px; */
+    border-radius: 50%;
 }
 
 .fill{
@@ -105,5 +116,18 @@ section .infos{
     background-color: #35353587;
     backdrop-filter: blur(4px);
     display: flex;
+    justify-content: center;
     align-items: center;
+}
+
+.modal .start-game,
+.modal .game-over{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.modal .game-over{
+    display: none;
 }
