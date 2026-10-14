@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nimbus Weather</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h2>Nimbus</h2>
+            <div class="search">
+                <input type="text" id="searchBox" placeholder="Search a City">
+                <button id="searchBtn" >Search</button>
+            </div>
+        </header>
+        <section class="currForecast">
+            <div class="card">
+                <div class="info">
+                    <h3 id="cityName">Mumbai, IN</h3>
+                    <p id="date">Wednesday, 14 October</p>
+                    <p id="temp">31°</p>
+                    <p id="condition">Partly couldy.H 33°.L 26°</p>
+                </div>
+                <span id="icon">⛅</span>
+            </div>
+        </section>
+        <section class="stats">
+            <div class="card">
+                <h5>FEELS LIKE</h5>
+                <h3 id="feelsLike">33°</h3>
+            </div>
+            <div class="card">
+                <h5>HUMIDITY</h5>
+                <h3 id="humidity">72%</h3>
+            </div>
+            <div class="card">
+                <h5>WIND</h5>
+                <h3 id="wind">14 km/h</h3>
+            </div>
+            <div class="card">
+                <h5>UV INDEX</h5>
+                <h3 id="uvIndex">7</h3>
+            </div>
+        </section>
+        <section>
+            <h3>5-DAY FORECAST</h3>
+            <div class="forecast">
+                <div class="card">
+                    <p class="day">Mon</p>
+                    <span class="icon">☀️</span>
+                    <p class="temp">32°</p>
+                </div>
+                <div class="card">
+                    <p class="day">Tue</p>
+                    <span class="icon">⛅</span>
+                    <p class="temp">36°</p>
+                </div>
+               <div class="card">
+                    <p class="day">Wed</p>
+                    <span class="icon">🌧️</span>
+                    <p class="temp">30°</p>
+                </div>
+                <div class="card">
+                    <p class="day">Thu</p>
+                    <span class="icon">☁️</span>
+                    <p class="temp">28°</p>
+                </div>
+                <div class="card">
+                    <p class="day">Fri</p>
+                    <span class="icon">⛈️</span>
+                    <p class="temp">29°</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

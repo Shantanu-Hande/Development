@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #12161F;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.search{
+    display: flex;
+    gap: 8px;
+}
+#searchBox{
+    border-radius: 5px;
+    padding: 10px 14px;
+    font-family: inherit;
+    background-color: #1B212D;
+    border: 1px solid #262E3D;
+    color: #9AA4B5;
+}
+
+#searchBtn{
+    border-radius: 5px;
+    background-color: #FFB547;
+    padding: 10px 20px;
+    font-family: inherit;
+    border: none;
+}
+.currForecast .card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 32px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#cityName{
+    font-size: 22px;
+}
+
+#date,
+#condition{
+    color: #9AA4B5;
+    font-size: 14px;
+}
+
+#temp{
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+#icon{
+    font-size: 100px;
+}
+
+.stats{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.stats h5{
+    color: #9AA4B5;
+    letter-spacing: 1px;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.stats h3{
+    font-size: 28px;
+}
+
+.forecast{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px, 1fr));
+    gap: 16px;
+    margin-top: 20px ;
+}
+
+.forecast p{
+    margin-bottom: 8px;
+}
+
+.forecast .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.day{
+    color: #9AA4B5;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.icon{
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.temp{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card{
+    background-color: #1B212D;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #262E3D;
+}
