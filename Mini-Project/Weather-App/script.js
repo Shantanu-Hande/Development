@@ -52,6 +52,7 @@ async function getData(latitude,longitude,name,countryCode){
         currWeather(data,name,countryCode)
         currStats(data)
         fiveDaysForecast(data)
+        // console.log(data);
     }
     catch(e){
         console.log(`error , ${e}`)
@@ -115,5 +116,3 @@ function fiveDaysForecast(data){
         })
     } 
 }
-
-
